@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("https://media.discordapp.net/attachments/1203729179045007432/1203729355038134282/bg2.jpg?ex=65d22752&is=65bfb252&hm=780e0e97ed71fbc9aa8193cb0ac6cede37a50c773d30e403b0e80c3d16a8d9fd&=&format=webp&width=1067&height=662");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .box-slide {
+    max-width: 1200px;
+    width: 95%;
+  }
+  
+  .slider-wrapper .image-list {
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    overflow-x: auto;
+    grid-template-columns: repeat(10, 1fr);
+  }
+  
+  .slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+  }

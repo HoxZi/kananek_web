@@ -17,7 +17,6 @@
 
 
 .containerice {
-    height: 100%;
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(88px);
     border-radius: 50px;
@@ -84,7 +83,6 @@
 @media (max-width: 850px) {
     .containerice {
         margin: 20px 8%;
-        height: 850px;
         background: rgba(255,255,255,0.1);
         backdrop-filter: blur(800px);
         border-radius: 50px;

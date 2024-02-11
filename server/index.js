@@ -154,7 +154,7 @@ app.delete("/deleteselect_table" ,async(req, res) => {
 });
 
 
-app.listen('3000', () =>{
+app.listen('3001', () =>{
     console.log('Server is runing om port 3000');
 })
 

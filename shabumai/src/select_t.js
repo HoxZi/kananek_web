@@ -28,12 +28,12 @@ function Select_t() {
               c_customer:c_customer              
             }
   
-              const res = await axios.get("http://localhost:3000/st", {params:tt})
+              const res = await axios.get("http://localhost:5000/st", {params:tt})
               const data = res.data;
               if(data.length > 0){
                 Swal.fire("เต็มแล้ว");
               } else {
-                const res = await axios.post("http://localhost:3000/select_table", {data:datares})
+                const res = await axios.post("http://localhost:5000/select_table", {data:datares})
                 Swal.fire({
                   title: "แจ้งเตือน",
                   text: "จองโต๊ะสำเร็จ",

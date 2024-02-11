@@ -18,11 +18,7 @@ function Addlist(){
                 text: "เพิ่มรายการสำเร็จ",
                 icon: "success"
               });
-            console.log(res.data)
-            Navigate("/listorder")
         }
-    
-    
     return(
         <div className="addlist">
             <nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">

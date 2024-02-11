@@ -16,7 +16,7 @@ function App() {
         },[]);
 
         const fateData = async() => {
-            const res = await axios.get("http://localhost:3000/list_order")
+            const res = await axios.get("http://localhost:5000/list_order")
             console.log(res.data)
             setdata(res.data)
         }

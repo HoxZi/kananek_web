@@ -11,7 +11,7 @@ const [data , setdata] =useState ([]);
         },[]);
 
         const fateData = async() => {
-            const res = await axios.get("http://localhost:3000/list_order")
+            const res = await axios.get("http://localhost:5000/list_order")
             console.log(res.data)
             setdata(res.data)
         }
@@ -40,7 +40,7 @@ const deletes = async(data) => {
         reverseButtons: true
       }).then(async(result) => {
         if (result.isConfirmed) {
-            const res = await axios.delete("http://localhost:3000/deletelistorder",{data :del})
+            const res = await axios.delete("http://localhost:5000/deletelistorder",{data :del})
             fateData()
           swalWithBootstrapButtons.fire({
             title: "Deleted!",

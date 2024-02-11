@@ -12,7 +12,7 @@ const [data, setdata] = useState([]);
       }, []);
     
       const fetchData = async () => {
-        const res = await axios.get('http://localhost:3000/tables')
+        const res = await axios.get('http://localhost:5000/tables')
         console.log(res.data)
         setdata(res.data)
       }
@@ -48,8 +48,8 @@ const [data, setdata] = useState([]);
             reverseButtons: true
           }).then(async(result) => {
             if (result.isConfirmed) {
-                const res1 = await axios.post('http://localhost:3000/add_histity',{data :ad})
-                const res2 = await axios.delete('http://localhost:3000/deleteselect_table',{data :del})
+                const res1 = await axios.post('http://localhost:5000/add_histity',{data :ad})
+                const res2 = await axios.delete('http://localhost:5000/deleteselect_table',{data :del})
                 fetchData()
               swalWithBootstrapButtons.fire({
                 title: "นำรายการออกสำเร็จ!",
@@ -101,8 +101,8 @@ const [data, setdata] = useState([]);
             reverseButtons: true
           }).then(async(result) => {
             if (result.isConfirmed) {
-                const res1 = await axios.post('http://localhost:3000/add_histity',{data :ad})
-                const res2 = await axios.delete('http://localhost:3000/deleteselect_table',{data :del})
+                const res1 = await axios.post('http://localhost:5000/add_histity',{data :ad})
+                const res2 = await axios.delete('http://localhost:5000/deleteselect_table',{data :del})
                 fetchData()
               swalWithBootstrapButtons.fire({
                 title: "สำเร็จ!",

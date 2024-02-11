@@ -11,7 +11,7 @@ function Historys() {
     },[])
 
     const fateData = async() =>{
-        const res = await axios.get("http://localhost:3000/histotys")
+        const res = await axios.get("http://localhost:5000/histotys")
         console.log(res.data)
         setdata(res.data)
     }

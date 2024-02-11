@@ -12,7 +12,7 @@ function Addlist(){
                 name:name_list,
                 img:img_list
             }
-            const res = await axios.post("http://localhost:3000/insertlistorder",{data:datares})
+            const res = await axios.post("http://localhost:5000/insertlistorder",{data:datares})
             Swal.fire({
                 title: "แจ้งเตือน",
                 text: "เพิ่มรายการสำเร็จ",
